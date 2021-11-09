@@ -1,2 +1,2 @@
-# demo
-this repo is for basic learning
+# demo   "so, the repo's name is here...
+this repo is for basic learning  # then the description is here

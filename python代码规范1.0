@@ -1,0 +1,11 @@
+注释：
+规范一： 写在语句上一行，用#加一个空格开头，例如：
+    # url is must, and html_name will be "test.html" if not been filled
+    spider_api = SpiderApi(url='', html_name="")
+
+规范二： 写在语句下一行，用三引号，例如：
+    spider_api = SpiderApi(url='', html_name="")
+    """url is must, and html_name will be "test.html" if not been filled"""
+
+规范三： 短注释，在语句后用两个空格+#加一个空格开头，例如：
+    spider_api = SpiderApi(url='', html_name="")  # url is must

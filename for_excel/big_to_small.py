@@ -1,3 +1,4 @@
+# These are only for decimal to smaller base
 def f(x, small_base):
     quotient, remainder = x // small_base, x % small_base
     return quotient, remainder

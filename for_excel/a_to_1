@@ -1,11 +1,15 @@
 import re
+
+def offset(x):  # 传入'A'或'a'返回 1
+    return ord(x.upper())-64
 def a_to_1(position_strs):
     col_no_strs = re.findall('[A-z]+', position_strs)[0]
     row_no = position_strs.replace(col_no_strs, '')
     num = 0
-    for i in range(len(col_no_strs)):
-        num += offset(col_no_strs[i])*26**i
-    return n
+    leng = len(col_no_strs)
+    for i in range(leng):
+        num += offset(col_no_strs[leng-i-1])*26**i
+    return num, int(row_no)
     
    if __name__ == '__main__':
       res = a_to_1('AA23')

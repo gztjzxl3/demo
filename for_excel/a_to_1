@@ -1,0 +1,12 @@
+import re
+def a_to_1(position_strs):
+    col_no_strs = re.findall('[A-z]+', position_strs)[0]
+    row_no = position_strs.replace(col_no_strs, '')
+    num = 0
+    for i in range(len(col_no_strs)):
+        num += offset(col_no_strs[i])*26**i
+    return n
+    
+   if __name__ == '__main__':
+      res = a_to_1('AA23')
+      print(res)
